@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- Aqui em baixo é um link para um arquivo externo na biblioteca de animação -->
+    <!-- Site de pesquisa: https://animate.style/ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://kit.fontawesome.com/d37c5443c6.js" crossorigin="anonymous"></script>
+    <title>Calculadora de Média </title>
+</head>
+
+<body onload="animation()">
+    <div class="container">
+        <div class="title">
+            <h1>Calculadora de média</h1>
+            <p>Descubra qual a sua média de nota de todas as provas!</p>
+            <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg"
+                class="page-logo" alt="logo" />
+        </div>
+        <div class="content">
+            <div class="woman">
+                <img src="./images/undraw_ideas_re_7twj.svg"
+                    alt="" width="400">
+            </div>
+            <div class="calculator">
+
+                <div class="media-container">
+                    <div class="media notes">
+                        <h2>Informe as notas!</h2>
+                        <div> <input id="note1" type="number" placeholder="1ª nota" /></div>
+                        <div> <input id="note2" type="number" placeholder="2ª nota" /></div>
+                        <div> <input id="note3" type="number" placeholder="3ª nota" /></div>
+                        <div> <input id="note4" type="number" placeholder="4ª nota" /></div>
+                        <button class="button-yellow" type="button" onClick="calculate()">Calcular média</button>
+                        <div id="media" class="media-result">
+                            <p><span id="span"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-card">
+                <div>
+                    <img class="footer-image" src="https://github.com/luacarol.png" />
+                </div>
+                <div>
+                    <p>Luana Caroliny</p>
+                    <p>Student and Software Developer</p>
+
+                    <!-- Icons -->
+                    <a title="Codepen" class="link-icon" target="_blank" href="https://codepen.io/LuCaroliny">
+                        <i class="fab fa-codepen"></i>
+                    </a>
+
+                    <a title="GitHub" class="link-icon" target="_blank" href="https://github.com/luacarol">
+                        <i class="fab fa-github-square"></i>
+                    </a>
+
+                    <a title="Linkedin" class="link-icon" target="_blank" href="https://www.linkedin.com/in/luana-caroliny-pedroso-de-oliveira-981652186/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <!--                     <p>
+                        <a class="linkedin" href="https://github.com/luacarol"></a>Confira meus trabalhos no linkedin</a>
+                    </p> -->
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="./app.js" />
+
+</script>
+
+</html>
